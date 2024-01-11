@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Task Five</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container,
+        .container-2 {
+            display: flex;
+
+        }
+
+        .container div,
+        .container-2 div {
+            width: 50%;
+        }
+
+        .container .text,
+        .container-2 .text {
+            max-width: 40%;
+            margin: 40px auto;
+
+        }
+
+        .container .text * {
+            margin-bottom: 10px;
+        }
+
+        .container-2 .text * {
+            margin-bottom: 10px;
+        }
+
+        .container .img img,
+        .container-2 .img img {
+            width: 100%;
+        }
+
+        .container .img,
+        .container-2 .img {
+            /* margin: 0px; */
+        }
+
+
+
+        /* responsive by using flex */
+        @media screen and (max-width: 576px) {
+            .container {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .container-2 {
+                flex-direction: column-reverse;
+                padding: 20px;
+            }
+
+            .container div,
+            .container-2 div {
+                width: 100%;
+            }
+
+            .container .text,
+            .container-2 .text {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="img">
+            <img src="food.jpg" alt="">
+
+        </div>
+        <div class="text">
+            <h3>why do we use it</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sit quos nulla rem earum incidunt, ad velit
+                aut libero vel, nihil quisquam dolorem. Deserunt illo fugiat officia dolore, qui libero.Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Ea sit quos nulla rem earum incidunt, ad velit aut libero
+                vel, nihil quisquam dolorem. Deserunt illo fugiat officia dolore, qui libero.Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Ea sit quos nulla rem earum </p>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium minima adipisci expedita dicta
+                ducimus saepe nesciunt asperiores deleniti rerum! Ullam deserunt eligendi officia maxime consequuntur
+                possimus quisquam aliquam nihil qui?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Accusantium minima adipisci expedita dicta ducimus saepe nesciunt asperiores deleniti rerum! Ullam
+                deserunt eligendi officia maxime consequuntur possimus quisquam aliquam nihil qui?Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Ea sit quos nulla rem earum incidunt, ad velit aut libero vel, </p>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="container-2">
+        <div class="text">
+            <h3>why do we use it</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sit quos nulla rem earum incidunt, ad velit
+                aut libero vel, nihil quisquam dolorem. Deserunt illo fugiat officia dolore, qui libero.Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Ea sit quos nulla rem earum incidunt, ad velit aut libero
+                vel, nihil quisquam dolorem. Deserunt illo fugiat officia dolore, qui libero.Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Ea sit quos nulla rem earum </p>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium minima adipisci expedita dicta
+                ducimus saepe nesciunt asperiores deleniti rerum! Ullam deserunt eligendi officia maxime consequuntur
+                possimus quisquam aliquam nihil qui?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Accusantium minima adipisci expedita dicta ducimus saepe nesciunt asperiores deleniti rerum! Ullam
+                deserunt eligendi officia maxime consequuntur possimus quisquam aliquam nihil qui?Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Ea sit quos nulla rem earum incidunt, ad velit aut libero vel, </p>
+
+        </div>
+
+        <div class="img">
+            <img src="marathon.jpg" alt="">
+
+        </div>
+    </div>
+</body>
+
+</html>
