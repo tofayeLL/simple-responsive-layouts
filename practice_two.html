@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid </title>
+    <style>
+        .container{
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(3,1fr);
+        }
+        .box{
+            border: 1px solid aqua;
+         
+           
+        }
+        #item-1{
+            grid-row: span 10;
+            background-color: brown;
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- .box{box-$}#item-$*35 -->
+        <div class="box" id="item-1">box-1</div>
+        <div class="box" id="item-2">box-2</div>
+        <div class="box" id="item-3">box-3</div>
+        <div class="box" id="item-4">box-4</div>
+   
+       
+       
+       
+    </div>
+    
+</body>
+</html>
