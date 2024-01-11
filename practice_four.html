@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice task four</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            display: flex;
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+
+        .container div{
+            width: 50%;
+        }
+        .container .img img{
+            width: 100%;
+        
+        }
+        .container .text button{
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: tomato;
+            color: #FFF;
+            border: none;
+        }
+        .container .text *{
+            margin-bottom: 10px;
+        }
+
+
+        @media screen and (max-width: 576px) {
+            .container{
+                flex-direction: column;
+                padding: 20px;
+            }
+            .container div{
+                width: 100%;
+            }
+
+        }
+
+       
+
+        
+        
+    </style>
+
+</head>
+<body>
+    <!-- container 1 -->
+    <div class="container">
+
+        <div class="img">
+            <img src="food.jpg" alt="">  
+        </div>
+        
+        <div class="text">
+            <h3>Post Title Will Be Here</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi quia perferendis possimus cupiditate pariatur, ducimus quaerat quidem molestiae minima ratione tenetur eligendi omnis autem, sed aperiam unde illum doloremque magnam, rerum veniam sint ipsam? Maiores nobis, porro nulla tenetur tempore voluptates in, dolore provident repudiandae dignissimos, ea necessitatibus qui reiciendis!</p>
+            <button>Read More..</button>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="img">
+            <img src="marathon.jpg" alt="">  
+        </div>
+        
+        <div class="text">
+            <h3>Post Title Will Be Here</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi quia perferendis possimus cupiditate pariatur, ducimus quaerat quidem molestiae minima ratione tenetur eligendi omnis autem, sed aperiam unde illum doloremque magnam, rerum veniam sint ipsam? Maiores nobis, porro nulla tenetur tempore voluptates in, dolore provident repudiandae dignissimos, ea necessitatibus qui reiciendis!</p>
+            <button>Read More..</button>
+
+        </div>
+
+    </div>
+
+
+
+    
+</body>
+</html>
